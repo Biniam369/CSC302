@@ -1,0 +1,146 @@
+/* AppointmentManager.css */
+
+.appointment-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.title {
+  text-align: center;
+  color: #003f7d;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Make label block-level for alignment, add spacing */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Uniform height, width, and style for all form controls */
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 44px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Date and Time pickers: match other inputs exactly */
+input[type="date"],
+input[type="time"] {
+  height: 44px;
+  min-height: 44px;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.15;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* Textarea should grow, but align top with inputs */
+textarea {
+  min-height: 44px;
+  height: auto;
+  resize: vertical;
+  font-size: 1rem;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* Optional: style for read-only patient name */
+input[readonly] {
+  background: #eef2f8;
+  color: #555;
+  cursor: not-allowed;
+}
+
+/* Toggle button style (if you use it) */
+.patient-toggle {
+  margin-top: 10px;
+  background: #0072ce;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Submit button style */
+.submit-btn {
+  background: #003f7d;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #0057b7;
+}
+
+/* NAVBAR - matches admin style */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #003366;
+  padding: 10px 0;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(3, 62, 115, 0.08);
+}
+
+.navbar button {
+  background-color: white;
+  color: #003366;
+  border: 2px solid #003366;
+  margin: 0 10px;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar button:hover,
+.navbar button.active {
+  background-color: #0057b7;
+  color: white;
+  border-color: #0057b7;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 700px) {
+  .appointment-container {
+    padding: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0;
+  }
+  .navbar button {
+    margin: 8px 0;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+}

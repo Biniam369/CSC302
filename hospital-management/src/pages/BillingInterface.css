@@ -1,0 +1,100 @@
+.billing {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.billing h2 {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 25px;
+}
+
+.billing input,
+.billing select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  appearance: none;
+  background-color: #fff;
+  color: #333;
+}
+
+.billing input:focus,
+.billing select:focus {
+  border-color: #004080;
+  outline: none;
+}
+
+.billing button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.billing button:hover {
+  background-color: #0059b3;
+}
+
+.billing p {
+  font-size: 17px;
+  color: #333;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* === INVOICE BOX === */
+.invoice {
+  margin-top: 30px;
+  background-color: #f7faff;
+  border-left: 6px solid #004080;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.invoice h3 {
+  color: #004080;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.invoice p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #444;
+}
+
+.invoice button {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px 16px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.invoice button:hover {
+  background-color: #0059b3;
+}

@@ -1,0 +1,54 @@
+.dashboard-root {
+  /* Makes dashboard fill viewport, centers content if needed */
+  min-height: 100vh;
+  background: #f4f8fb;
+}
+
+/* NAVIGATION BAR: spans top, has margin below */
+.navbar {
+  width: 100%;
+  background-color: #033e73;
+  padding: 24px 0 16px 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 12px rgba(3, 62, 115, 0.08);
+  margin-bottom: 32px; /* separates navbar from the main card/content */
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-btn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 12px 36px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+.navbar-btn:hover,
+.navbar-btn.active {
+  background-color: #105ba8;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(3, 62, 115, 0.12);
+}
+
+/* CONTENT CARD */
+.dashboard-content {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(30,60,90,0.08);
+  padding: 40px;
+  max-width: 750px;
+  margin: 0 auto;
+}

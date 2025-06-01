@@ -1,0 +1,132 @@
+/* ScheduledAppointments.css */
+
+.scheduled-container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #004080;
+  padding: 10px 0;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.navbar button {
+  background-color: #0072ce;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.navbar button:hover,
+.navbar button.active {
+  background-color: #005bb5;
+}
+
+.appointment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.appointment-card {
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-left: 5px solid #003366;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out;
+}
+
+.appointment-card:hover {
+  transform: translateY(-2px);
+}
+
+.appt-info .datetime {
+  font-weight: bold;
+  color: #444;
+}
+
+.details {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.status {
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.status.scheduled {
+  background-color: #e7f1ff;
+  color: #0057b7;
+}
+
+.status.completed {
+  background-color: #e1f6e6;
+  color: #1a7f37;
+}
+
+.status.cancelled {
+  background-color: #fdecea;
+  color: #c0392b;
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.edit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #b02a37;
+}

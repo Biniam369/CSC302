@@ -1,0 +1,44 @@
+.admin-dashboard {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-nav {
+  display: flex;
+  justify-content: center;  /* Center all tabs */
+  flex-wrap: wrap;          /* Wrap to next line on smaller screens */
+  background-color: #003366;
+  padding: 10px;
+  gap: 12px;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-nav button {
+  background-color: #0059b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  min-width: 160px;
+  text-align: center;
+}
+
+.admin-nav button:hover {
+  background-color: #0073e6;
+}
+
+.admin-nav button.active {
+  background-color: #004080;
+  border: 2px solid #ffffff;
+}
+
+.admin-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  min-height: 400px;
+}
